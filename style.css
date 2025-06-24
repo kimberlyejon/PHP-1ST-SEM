@@ -1,0 +1,254 @@
+/* RESET STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BASE LAYOUT */
+html, body {
+    height: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER #aecfcf */
+header {
+    background-color: rgb(228, 125, 192);
+    color: white;
+    padding: 1rem 2rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-text p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* NAVIGATION */
+.nav-tabs {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.nav-tabs li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-tabs li a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN */
+main {
+    flex: 1;
+    padding: 2rem;
+    background-color: #f6ffff; /*BACKGROUND COLOR OF THE PAGE */
+}
+/* LOGIN FORM STYLE */
+main form {
+    max-width: 400px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #fff0f5;
+    border-radius: 8px;
+    border: 1px solid black;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5px;
+}
+
+main form label {
+    font-weight: bold;
+    color: black;
+    margin-bottom: 0.3rem;
+}
+
+main form input[type="text"],
+main form input[type="password"] {
+    padding: 0.6rem;
+    border: 1px solid;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+/* Style submit button */
+main form input[type="submit"] {
+    padding: 0.6rem;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    font-size: 15px;
+}
+
+main form input[type="submit"]:hover {
+    background-color: rgb(228, 125, 192);
+}
+
+/* Style register button link */
+.btn-link {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background-color: pink;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    font-size: 15px;
+}
+
+.btn-link:hover {
+    background-color: pink;
+    color: black;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    main form {
+        margin: 2rem 1rem;
+        padding: 1.5rem;
+    }
+}
+
+.btn-link {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background-color: rgb(193, 80, 146);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-link:hover {
+    background-color: rgb(193, 80, 146);
+    color: black;
+}
+
+/* FOOTER */
+footer {
+    background-color: rgb(228, 125, 192);
+    color: white;
+    text-align: center;
+    padding: 40px;
+    font-size: 20px;
+}
+
+
+
+
+
+/* MEDIA QUERIES*/
+
+/* SMALL SCREENS (phones) */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-text {
+        margin-bottom: 1rem;
+    }
+
+    .nav-tabs {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .nav-tabs li a {
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+}
+
+/* MEDIUM SCREENS (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .nav-tabs {
+        gap: 1rem;
+    }
+
+    .nav-tabs li a {
+        font-size: 1.1rem;
+    }
+
+    main {
+        padding: 1.5rem;
+    }
+}
+
+/* LARGE SCREENS (desktops) */
+@media (min-width: 1025px) {
+    .nav-tabs li a {
+        font-size: 1.1rem;
+    }
+
+    main {
+        padding: 2rem 4rem;
+    }
+}
+
+.user-profile-card {
+    max-width: 700px;
+    margin: 5rem auto;
+    padding: 2rem;
+    margin-bottom: 20px;
+    background-color: #ffe6f0;
+    border: 2px solid #ff99cc;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 182, 193, 0.5);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.user-profile-card h2 {
+    text-align: center;
+    color: #cc397b;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.profile-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ffb3d9;
+}
+
+.profile-row strong {
+    color: #b3005a;
+    font-weight: bold;
+    width: 40%;
+    text-align: left;
+}
+
+.profile-row span {
+    width: 55%;
+    text-align: right;
+    color: #333;
+}
